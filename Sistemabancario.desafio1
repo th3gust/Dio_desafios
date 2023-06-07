@@ -1,0 +1,45 @@
+menu=''' 
+[d] Depositar
+[s] Sacar
+[e] Extrato
+[q] Sair
+=>
+'''
+saldo=0
+saque=0
+limite=500
+extrato=''
+numero_saque=0
+LIMITE_SAQUE=3
+
+while True:
+    opcao=input(menu)
+    if opcao=='d':
+        print('Depositar')
+        depositar=float(input('Quanto deseja depositar?'))
+        extrato+=f'Deposito de R$: {depositar:.2f}\n'
+        saldo+=depositar
+    elif opcao=='s':
+        print('Sacar')
+        saque=float(input('Quanto deseja sacar: '))
+        if LIMITE_SAQUE>numero_saque:
+            if saque>saldo:
+                print('Você não possui saldo em conta.')
+            elif saque>limite:
+                print('Valor acima do limite de saque permitido.')
+            else:
+                print('Sacando...')
+                saldo-=saque
+                extrato+=f'Saque de R$: {depositar:.2f}\n'
+            numero_saque+=1
+        else:
+            print('Limite diário de saques atingido. Tente amanhã.')
+    elif opcao=='e':
+        print('Extrato:')
+        print('Não foram realizadas movimentações') if extrato=='' else print(extrato)
+        print(f'Saldo atual: R$ {saldo:.2f}')
+    elif opcao=='q':
+        print('Sair')
+        break
+    else: 
+        print('Comando inválido, digite novamente: ')
