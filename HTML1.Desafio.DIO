@@ -1,0 +1,59 @@
+<html>
+
+<head></head>
+
+<title>Resumo sobre HTML</title>
+
+<body>
+
+    <h1>Conceitos básicos do HTML</h1>
+    <hr/>
+    <h2 id="inicio"> Índice</h2>
+
+    <ul>
+        <li><a href="#ferramentas">Ferramentas utilizadas</a></li>
+        <li><a href="#inspetor">Usando o Inspetor de Elementos</a></li>
+        <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+        <li><a href="#tag">Falando sobre tags</a></li>
+
+    </ul>
+
+    <h2 id="#ferramentas">Ferramentas utlizadas</h2><a href="#inicio"> <sub>Voltar</sub></a>
+    <p>Para edição do texto em HTML utilizamos a plataforma Visual Studio Code (VS Code) é um editor de código de código aberto desenvolvido pela Microsoft.</p>
+    <p>A saber, ele está disponível para Windows, Mac e Linux. É criado com Electron, ferramenta criada pelo GitHub que permite a criação de softwares Desktop com HTML, CSS e JavaScript.</p>
+    <p>Com ele, o usuário pode escrever e editar código em várias linguagens de programação, inclusive HTML, mas o que fazer quando você precisa ver como está progredindo o código HTML no meio de seu trabalho? Uma extensão ou complemento que facilita a execução de HTML dentro do Visual Studio Code é a melhor opção. Neste caso estamos utilizando a extensão Live Server.</p>
+    <p> O Terminal também pode ser utilizado para rodar arquivos desse tipo. </p>
+
+    <h2 id="inspetor">Usando o Inspetor de Elementos</h2><a href="#inicio"> <sub>Voltar</sub></a>
+    <p>A ferramenta de inspecionar elemento é um utilitário que permite visualizar o código-fonte subjacente de qualquer página web. No browser da Google, por exemplo, é possível acessá-lo ao utilizar o comando F12.</p>
+    <p>Além disso, você pode usá-la para fazer alterações temporárias e ver os resultados em tempo real, deixando o código-fonte original intacto.</p>
+    <p>Isso é extremamente útil se você precisa testar uma alteração ou diagnosticar um problema. Também pode ser de grande valia se você encontrar um site com um recurso de que goste e estiver curioso para saber como ele foi implementado.</p>
+    <p>Se você trabalha com muitos sites, provavelmente, está sempre em busca de maneiras mais rápidas e eficientes de fazer as coisas. Nesse caso, a ferramenta para inspecionar elemento, disponível na maioria dos principais navegadores, pode ser um recurso útil para ter em mãos.</p>
+    <p>Com ela, você pode identificar rapidamente as classes CSS, visualizar alterações em elementos de uma página, simular um site em dispositivos móveis e muito mais. Neste artigo, vamos apresentar a ferramenta de inspecionar e, ainda, ensinar como acessá-la nos navegadores web mais populares. </p>
+    
+    <h2 id="estrutura">Estrutura básica do HTML</h2><a href="#inicio"> <sub>Voltar</sub></a>
+    <p>O documento HTML sempre inicia com o que chamamos de estrutura básica. Esta estrutura é quase que imutável. Sempre será dessa forma e você sempre, sempre começará seu HTML começando por esse código. Geralmente os editores como o Sublime Text já tem atalhos para iniciar os documentos HTMLs com essa estrutura, logo, você não precisa se preocupar em decorá-la, mas é bom que faça.</p>
+    <p>É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:</p>
+    <ul >
+        <li><a id="tabela_inicio" href="#doc">Definição do documento (doctype)</a></li>
+        <li><a href="#cabeça">Cabeça (head)</a></li>
+        <li><a href="#corpo">Corpo (body)</a></li>
+    </ul>
+    <blockquote><h3 id="doc">Doctype - Definindo o documento</h3><a href="#tabela_inicio"><sub>Voltar</sub></a>
+    <p>Uma coisa importante: SEMPRE deve existir o doctype, que é este código &lt;!DOCTYPE html&gt;.</p>
+    <p>O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, que o código encontrado ali é um código HTML. Assim eles sabem o que fazer para mostrar seu site da melhor forma possível. Lembre-se: o doctype é OBRIGATÓRIO e deve ser sempre a PRIMEIRA LINHA do seu documento.</p>
+    <h3 id="cabeça">HEAD</h3><a href="#tabela_inicio"><sub>Voltar</sub></a>
+    <p>Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag head.</p>
+    <h3 id="corpo">BODY</h3><a href="#tabela_inicio"><sub>Voltar</sub></a>
+    <p>Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a apresentação de entrada de dados (formulários) também se aplica neste seção do documento. Na prática, o corpo do documento é delimitado pelo par de tags &lt;body&gt; e &lt;/body&gt;.</p>
+    <p>Dentro do elemento BODY sua estrutura de página terá os elementos semânticos da construção da sua página, onde serão declarados e identificados cabeçalhos, rodapé, conteúdo principal, etc.</p></blockquote>
+
+    <h2 id="tag">Falando sobre tags</h2><a href="#inicio"> <sub>Voltar</sub></a>
+    <p>Os elementos HTML ou também chamados de tags HTML, são utilizados para informar ao navegador que tipo de estrutura é essa que está sendo construída, podendo ser títulos, parágrafos, imagens, links, entre outros.</p>
+    <p>As tags são formadas por uma estrutura própria, iniciam com o sinal “menor que”, em seguida vem o nome daquele elemento e por fim, o sinal “maior que”. Podem ser dispostas em tags que precisam de fechamento e tags que fecham sozinhas (self-closing). O fechamento de uma tag será definido com uma barra (/), sendo que no caso das tags de auto fechamento, não há necessidade da presença desse caractere.</p>
+    <p>Cada tag HTML tem um significado semântico e define um bloco de conteúdo que pode ser manipulado pelo navegador. Por exemplo, as tags podem delimitar um parágrafo, texto em negrito, texto itálico e assim vai.</p>
+    <p>O uso das tags HTML são extremamente úteis porque permitem que os navegadores interpretem e apresentem corretamente o conteúdo. Além disso, as tags HTML também podem ser usadas para aplicar estilos a um documento HTML usando folhas de estilo em cascata (CSS).</p>
+
+</body>
+
+</html>
