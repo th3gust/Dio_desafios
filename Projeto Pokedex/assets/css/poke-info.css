@@ -1,0 +1,23 @@
+body {
+    background-color: 0;
+}
+
+ol{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.name {
+    color: #fff;
+}
+
+.number {
+    color: #000;
+    opacity: .3;
+}
+
+.type {
+    background-color: #77c850;
+    filter: brightness(1);
+}
